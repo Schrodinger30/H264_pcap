@@ -1,3 +1,4 @@
+# Import packages
 import sys
 import os
 import argparse
@@ -9,10 +10,10 @@ MAX_JITTER_SIZE = 50
 
 def parse_args():
     p = argparse.ArgumentParser(
-        description="Extract H.264 over RTP from a pcap into a .264 file (Scapy-based)"
+        description="Extract H.264 over RTP from a pcap into a .264 file"
     )
-    p.add_argument("input_pcap", help="Input pcap or pcapng file")
-    p.add_argument("output_h264", help="Output raw H.264 elementary stream")
+    p.add_argument("input_pcap", help="Input pcap(ng) file")
+    p.add_argument("output_h264", help="Output raw H.264")
     return p.parse_args()
 
 
