@@ -4,7 +4,7 @@ import argparse
 from scapy.all import rdpcap, UDP
 
 MAX_JITTER_SIZE = 50
-SEQ_MOD = 1 << 16  # 65536
+SEQ_MOD = 1 << 16 
 
 
 def parse_args():
